@@ -1,7 +1,5 @@
 # ut
-abfackelns Server Utilities (ASU) for Unreal Tournament
-
-ASU Unreal Tournament for Linux
+### abfackeln's Server Utilities (ASU) for Unreal Tournament on Linux
 
 If you have ever tried to install Unreal Tournament on a Linux box, you have no doubt come across a handful of pitfalls which make it difficult and annoying to set up.  It took me a long while to set up a server that was fully-functional and stable, and even longer to figure out how I did it. 
 
@@ -17,4 +15,5 @@ Key features of abfackelns UT installer package:
 * Configurable number of bots to be in each game by default.
 * Map or skin download redirection of files larger than 100k.
 
+---
 ASU is currently in its beta-testing phase, and is being offered free without warrantee (as always).  If you have any problems, comments or suggestions please visit the abfackeln.com Unreal Tournament for Linux support page at http://ut.abfackeln.com/support.html
