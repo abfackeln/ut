@@ -401,22 +401,22 @@ sub open {
     if( $ini->exists( ['Setup', 'Requires'] ) ) {
 	foreach my $requirement ( $ini->get( ['Setup', 'Requires'],
 	    -mapping => 'multiple' ) ) {
-	    my( %hash );
-	    %hash->{product}      = $ini->get( [$requirement, 'Product'],
+	    my( $hash );
+	    $hash->{product}      = $ini->get( [$requirement, 'Product'],
 		-mapping => 'single' );
-	    %hash->{version}      = $ini->get( [$requirement, 'Version'],
+	    $hash->{version}      = $ini->get( [$requirement, 'Version'],
 		-mapping => 'single' );
-	    %hash->{localproduct} = $ini->get( [$requirement, 'LocalProduct'],
+	    $hash->{localproduct} = $ini->get( [$requirement, 'LocalProduct'],
 		-mapping => 'single' );
-	    %hash->{producturl}   = $ini->get( [$requirement, 'ProductURL'],
+	    $hash->{producturl}   = $ini->get( [$requirement, 'ProductURL'],
 		-mapping => 'single' );
-	    %hash->{versionurl}   = $ini->get( [$requirement, 'VersionURL'],
+	    $hash->{versionurl}   = $ini->get( [$requirement, 'VersionURL'],
 		-mapping => 'single' );
-	    %hash->{developer}    = $ini->get( [$requirement, 'Developer'],
+	    $hash->{developer}    = $ini->get( [$requirement, 'Developer'],
 		-mapping => 'single' );
-	    %hash->{developerurl} = $ini->get( [$requirement, 'DeveloperURL'],
+	    $hash->{developerurl} = $ini->get( [$requirement, 'DeveloperURL'],
 		-mapping => 'single' );
-	    push( @requirements, \%hash );
+	    push( @requirements, $hash );
 	}
     }
 
